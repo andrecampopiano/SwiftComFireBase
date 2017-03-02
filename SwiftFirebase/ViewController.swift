@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
 
+    let firebase = FIRDatabase.database().reference()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        firebase.child("pontuacao").setValue("100")
+        
     }
 
     override func didReceiveMemoryWarning() {

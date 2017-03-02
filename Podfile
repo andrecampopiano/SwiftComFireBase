@@ -1,10 +1,10 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-xcodeproj 'Usando Firebase.xcodeproj'
-target ‘Usando Firebase’ do
-    platform :ios, '8.1'
+xcodeproj 'SwiftFirebase.xcodeproj'
+target ‘SwiftFirebase’ do
+    platform :ios, ‘9.1’
     pod 'Firebase/Core'
     pod 'Firebase/Database'
     pod 'Firebase/Auth'	
-    workspace ‘Usando_Firebase.xcworkspace'
+    workspace ‘SwiftFirebase.xcworkspace'
 end
