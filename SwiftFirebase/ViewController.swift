@@ -13,11 +13,33 @@ class ViewController: UIViewController {
 
     let firebase = FIRDatabase.database().reference()
     
+    @IBOutlet weak var lblText: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        FIRAuth.auth()?.createUser(withEmail: <#T##String#>, password: <#T##String#>, completion: <#T##FIRAuthResultCallback?##FIRAuthResultCallback?##(FIRUser?, Error?) -> Void#>)
+        
+        
+        
+        
+        /*
         // Do any additional setup after loading the view, typically from a nib.
         
-        firebase.child("pontuacao").setValue("100")
+        let pontuacao = firebase.child("pontuacao")
+        
+        
+        //Remover item
+        //pontuacao.removeValue()
+        
+        
+        //Recuperar dados do Firebase
+        pontuacao.observe(FIRDataEventType.value, with: {(dados)in
+           let ponto = dados.value as! String
+            self.lblText.text = ponto
+        
+        })
+        
+    */
         
     }
 
