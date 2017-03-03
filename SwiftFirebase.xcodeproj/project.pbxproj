@@ -27,6 +27,7 @@
 		9453D0AC1E688D8F008B2D6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9453D0AE1E688D8F008B2D6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9453D0B41E688F73008B2D6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9453D0B61E699498008B2D6B /* SwiftFirebase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftFirebase.entitlements; sourceTree = "<group>"; };
 		F02243E7B30BF6DF4221BCAC /* Pods-SwiftFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFirebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftFirebase/Pods-SwiftFirebase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +81,7 @@
 		9453D0A11E688D8F008B2D6B /* SwiftFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				9453D0B61E699498008B2D6B /* SwiftFirebase.entitlements */,
 				9453D0A21E688D8F008B2D6B /* AppDelegate.swift */,
 				9453D0A41E688D8F008B2D6B /* ViewController.swift */,
 				9453D0A61E688D8F008B2D6B /* Main.storyboard */,
@@ -128,6 +130,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = K2ZUEY4TKM;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -339,6 +346,7 @@
 			baseConfigurationReference = 1CD93DABB2CBE06484BA3864 /* Pods-SwiftFirebase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftFirebase/SwiftFirebase.entitlements;
 				DEVELOPMENT_TEAM = K2ZUEY4TKM;
 				INFOPLIST_FILE = SwiftFirebase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -353,6 +361,7 @@
 			baseConfigurationReference = F02243E7B30BF6DF4221BCAC /* Pods-SwiftFirebase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftFirebase/SwiftFirebase.entitlements;
 				DEVELOPMENT_TEAM = K2ZUEY4TKM;
 				INFOPLIST_FILE = SwiftFirebase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
